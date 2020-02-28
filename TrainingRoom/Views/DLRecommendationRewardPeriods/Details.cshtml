@@ -1,0 +1,33 @@
+﻿@model Deepleo.Web.Models.DLRecommendationRewardPeriod
+
+@{
+    ViewBag.Title = "详情";
+}
+
+<h2>详情</h2>
+
+
+    <hr />
+    <div class="row-fluid">
+        <div class="alert alert-warning">
+            开始日期:@Html.DisplayFor(model => model.StartDate)
+        </div>
+        <div class="alert alert-success">
+            结束日期:@Html.DisplayFor(model => model.EndDate)
+        </div>
+        <div class="alert alert-info">
+            简要描述:@Html.DisplayFor(model => model.RewardText)
+        </div>
+    </div>
+
+<div class="col-md-offset-2 col-md-10">
+    <a class="btn btn-info" href='@Url.Action("Edit", "DLRecommendationRewardPeriods", new { id = Model.RewardID })'>
+        修改
+    </a>
+    <a class="btn btn-info" href='@Url.Action("Delete", "DLRecommendationRewardPeriods", new { id = Model.RewardID })'>
+        删除
+    </a>
+    <a class="btn btn-info" href='@Url.Action("Index", "DLRecommendationRewardPeriods")'>
+        返回列表
+    </a>
+</div>

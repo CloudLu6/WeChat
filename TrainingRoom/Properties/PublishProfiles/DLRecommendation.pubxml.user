@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\DLRecommendation</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Deepleo.Web.dll">
+      <publishTime>05/29/2019 14:11:36</publishTime>
+    </File>
+    <File Include="bin/Deepleo.Weixin.SDK.dll">
+      <publishTime>05/29/2019 14:11:35</publishTime>
+    </File>
+    <File Include="bin/Delimon.Win32.IO.dll">
+      <publishTime>01/16/2013 01:04:34</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>11/20/2017 23:24:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/18/2017 13:57:10</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>09/30/2013 17:36:38</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>09/30/2013 18:15:20</publishTime>
+    </File>
+    <File Include="bin/Senparc.Weixin.dll">
+      <publishTime>01/10/2018 14:56:56</publishTime>
+    </File>
+    <File Include="bin/Senparc.Weixin.Work.dll">
+      <publishTime>01/10/2018 14:57:30</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Extensions.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Primitives.dll">
+      <publishTime>02/19/2015 20:10:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>10/05/2016 13:11:52</publishTime>
+    </File>
+    <File Include="ClassDiagram1.cd">
+      <publishTime>02/12/2018 09:11:17</publishTime>
+    </File>
+    <File Include="Css/bootstrap.min.css">
+      <publishTime>01/17/2018 13:27:15</publishTime>
+    </File>
+    <File Include="Css/daterangepicker.css">
+      <publishTime>12/07/2017 09:50:35</publishTime>
+    </File>
+    <File Include="Css/MyStyle.css">
+      <publishTime>01/22/2018 13:33:21</publishTime>
+    </File>
+    <File Include="Css/style.css">
+      <publishTime>12/07/2017 09:53:13</publishTime>
+    </File>
+    <File Include="Css/weui.css">
+      <publishTime>11/21/2017 22:38:59</publishTime>
+    </File>
+    <File Include="exportFile/css/htmleaf-demo.css">
+      <publishTime>01/23/2018 16:52:58</publishTime>
+    </File>
+    <File Include="exportFile/dist/css/tableexport.css">
+      <publishTime>01/23/2018 17:03:08</publishTime>
+    </File>
+    <File Include="exportFile/dist/css/tableexport.min.css">
+      <publishTime>01/23/2018 16:53:57</publishTime>
+    </File>
+    <File Include="exportFile/dist/img/icsv.png">
+      <publishTime>01/23/2018 16:53:48</publishTime>
+    </File>
+    <File Include="exportFile/dist/img/itxt.png">
+      <publishTime>01/23/2018 16:53:48</publishTime>
+    </File>
+    <File Include="exportFile/dist/img/ixls.png">
+      <publishTime>01/23/2018 16:53:48</publishTime>
+    </File>
+    <File Include="exportFile/dist/img/ixlsx.png">
+      <publishTime>01/23/2018 16:53:48</publishTime>
+    </File>
+    <File Include="exportFile/dist/js/tableexport.js">
+      <publishTime>01/23/2018 17:02:28</publishTime>
+    </File>
+    <File Include="exportFile/dist/js/tableexport.min.js">
+      <publishTime>01/23/2018 16:59:16</publishTime>
+    </File>
+    <File Include="exportFile/fonts/icomoon.eot">
+      <publishTime>01/24/2018 16:36:35</publishTime>
+    </File>
+    <File Include="exportFile/fonts/icomoon.svg">
+      <publishTime>01/24/2018 16:36:35</publishTime>
+    </File>
+    <File Include="exportFile/fonts/icomoon.ttf">
+      <publishTime>01/24/2018 16:36:35</publishTime>
+    </File>
+    <File Include="exportFile/fonts/icomoon.woff">
+      <publishTime>01/24/2018 16:36:35</publishTime>
+    </File>
+    <File Include="exportFile/index.html">
+      <publishTime>01/23/2018 16:52:23</publishTime>
+    </File>
+    <File Include="exportFile/js/blob.js">
+      <publishTime>01/24/2018 16:36:55</publishTime>
+    </File>
+    <File Include="exportFile/js/FileSaver.min.js">
+      <publishTime>01/24/2018 16:36:56</publishTime>
+    </File>
+    <File Include="exportFile/js/jquery-1.11.0.min.js">
+      <publishTime>01/24/2018 16:36:57</publishTime>
+    </File>
+    <File Include="exportFile/js/xlsx.core.min.js">
+      <publishTime>01/24/2018 16:36:58</publishTime>
+    </File>
+    <File Include="exportFile/related/1.jpg">
+      <publishTime>01/24/2018 16:37:29</publishTime>
+    </File>
+    <File Include="exportFile/related/2.jpg">
+      <publishTime>01/24/2018 16:37:29</publishTime>
+    </File>
+    <File Include="exportFile/src/stable/css/tableexport.css">
+      <publishTime>01/24/2018 16:37:42</publishTime>
+    </File>
+    <File Include="exportFile/src/stable/css/tableexport.min.css">
+      <publishTime>01/24/2018 16:37:43</publishTime>
+    </File>
+    <File Include="exportFile/src/stable/img/icsv.png">
+      <publishTime>01/24/2018 16:37:45</publishTime>
+    </File>
+    <File Include="exportFile/src/stable/img/itxt.png">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/stable/img/ixls.png">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/stable/img/ixlsx.png">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/stable/js/tableexport.js">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/stable/js/tableexport.min.js">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/css/table2csv.css">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/index.html">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/js/Blob.js">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/js/FileSaver.js">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/js/jquery-1.11.2.min.js">
+      <publishTime>01/24/2018 16:37:50</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/js/jquery.table2csv.js">
+      <publishTime>01/24/2018 16:37:53</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/js/jquery.table2csv.min.js">
+      <publishTime>01/24/2018 16:37:53</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/js/table2excel.js">
+      <publishTime>01/24/2018 16:37:53</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/js/xlsx.core.js">
+      <publishTime>01/24/2018 16:37:54</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.0/table2csv.zip">
+      <publishTime>01/24/2018 16:37:55</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/bootstrap-theme.css">
+      <publishTime>01/24/2018 16:37:55</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/bootstrap-theme.css.map">
+      <publishTime>01/24/2018 16:37:55</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/bootstrap-theme.min.css">
+      <publishTime>01/24/2018 16:37:55</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/bootstrap.css">
+      <publishTime>01/24/2018 16:37:55</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/bootstrap.css.map">
+      <publishTime>01/24/2018 16:37:55</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/bootstrap.min.css">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/font-awesome.css">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/font-awesome.min.css">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/css/tableexport.css">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/fontawesome-webfont.eot">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/fontawesome-webfont.svg">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/fontawesome-webfont.ttf">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/fontawesome-webfont.woff">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/fontawesome-webfont.woff2">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/FontAwesome.otf">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/img/background.png">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/img/icsv.png">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/img/itxt.png">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/img/ixls.png">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/img/Xls_file_format_symbol_16 %281%29.png">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/index.html">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/Blob.js/Blob.js">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/bootstrap-autohidingnavbar/jquery.bootstrap-autohidingnavbar.js">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/bootstrap-autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/Bootstrap/bootstrap.js">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/Bootstrap/bootstrap.min.js">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/Export2Excel.js">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/FileSaver.js/FileSaver.js">
+      <publishTime>01/24/2018 16:37:56</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/jquery-1.11.3.min.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/js-xlsx/xlsx.core.min.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/main.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/npm.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/TableExport.js/jquery.tableexport.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/TableExport.js/jquery.tableexport.v2.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/ZeroClipboard/ZeroClipboard.Core.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/ZeroClipboard/ZeroClipboard.Core.min.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/ZeroClipboard/ZeroClipboard.Core.min.map">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/ZeroClipboard/ZeroClipboard.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/ZeroClipboard/ZeroClipboard.min.js">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/ZeroClipboard/ZeroClipboard.min.map">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.1/js/ZeroClipboard/ZeroClipboard.swf">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/bootstrap-theme.css">
+      <publishTime>01/24/2018 16:37:57</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/bootstrap-theme.css.map">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/bootstrap-theme.min.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/bootstrap.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/bootstrap.css.map">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/bootstrap.min.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/font-awesome.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/font-awesome.min.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/highlight-themes/atelier-estuary.dark.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/highlight-themes/default.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/highlight-themes/github-gist.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/highlight-themes/github.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/highlight-themes/googlecode.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/highlight-themes/idea.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/highlight-themes/xcode.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/highlight-themes/zenburn.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/css/tableexport.css">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/fontawesome-webfont.eot">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/fontawesome-webfont.svg">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/fontawesome-webfont.ttf">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/fontawesome-webfont.woff">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/fontawesome-webfont.woff2">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/FontAwesome.otf">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/img/background.png">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/img/icsv.png">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/img/itxt.png">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/img/ixls.png">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/img/Xls_file_format_symbol_16 %281%29.png">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/index.html">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/Blob.js/Blob.js">
+      <publishTime>01/24/2018 16:37:58</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/bootstrap-autohidingnavbar/jquery.bootstrap-autohidingnavbar.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/bootstrap-autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/bootstrap.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/bootstrap.min.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/Bootstrap/bootstrap.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/Bootstrap/bootstrap.min.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/Export2Excel.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/FileSaver.js/FileSaver.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/highlight.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/jquery-1.11.3.min.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/jquery.tableexport.js">
+      <publishTime>01/24/2018 16:37:59</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/js-xlsx/xlsx.core.min.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/main.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/npm.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/Blob.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/Export2Excel.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/FileSaver.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/ToggleAttr.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/xlsx.core.min.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/ZeroClipboard/ZeroClipboard.Core.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/ZeroClipboard/ZeroClipboard.Core.min.js">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/ZeroClipboard/ZeroClipboard.Core.min.map">
+      <publishTime>01/24/2018 16:38:00</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/ZeroClipboard/ZeroClipboard.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/ZeroClipboard/ZeroClipboard.min.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/ZeroClipboard/ZeroClipboard.min.map">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/plugins/ZeroClipboard/ZeroClipboard.swf">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/TableExport.js/jquery.tableexport.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/TableExport.js/jquery.tableexport.v2.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/ZeroClipboard/ZeroClipboard.Core.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/ZeroClipboard/ZeroClipboard.Core.min.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/ZeroClipboard/ZeroClipboard.Core.min.map">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/ZeroClipboard/ZeroClipboard.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/ZeroClipboard/ZeroClipboard.min.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/ZeroClipboard/ZeroClipboard.min.map">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v1/v1.2/js/ZeroClipboard/ZeroClipboard.swf">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v2/v2.0/tableexport-2.0.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v2/v2.0/tableexport-2.0.min.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v2/v2.1/Export2Excel.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v2/v2.1/tableexport-2.1.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v2/v2.1/tableexport-2.1.min.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.0.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.0.min.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.1.1.js">
+      <publishTime>01/24/2018 16:38:01</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.1.1.min.js">
+      <publishTime>01/24/2018 16:38:02</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.1.2.js">
+      <publishTime>01/24/2018 16:38:02</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.1.2.min.js">
+      <publishTime>01/24/2018 16:38:02</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.1.3.js">
+      <publishTime>01/24/2018 16:38:02</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.1.3.min.js">
+      <publishTime>01/24/2018 16:38:02</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.1.js">
+      <publishTime>01/24/2018 16:38:03</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.1.min.js">
+      <publishTime>01/24/2018 16:38:03</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.2.js">
+      <publishTime>01/24/2018 16:38:04</publishTime>
+    </File>
+    <File Include="exportFile/src/v3/tableexport-3.2.min.js">
+      <publishTime>01/24/2018 16:38:04</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/20/2017 23:24:44</publishTime>
+    </File>
+    <File Include="Img/approved.jpg">
+      <publishTime>02/12/2018 10:21:24</publishTime>
+    </File>
+    <File Include="Img/canceled.jpg">
+      <publishTime>02/22/2018 16:35:50</publishTime>
+    </File>
+    <File Include="Img/LastWeek.png">
+      <publishTime>02/08/2018 14:28:21</publishTime>
+    </File>
+    <File Include="Img/NextWeek.png">
+      <publishTime>02/08/2018 14:28:22</publishTime>
+    </File>
+    <File Include="Img/reject.jpg">
+      <publishTime>02/12/2018 10:21:24</publishTime>
+    </File>
+    <File Include="Img/sendNotice.jpg">
+      <publishTime>02/22/2018 10:03:56</publishTime>
+    </File>
+    <File Include="Img/sendNotice2.jpg">
+      <publishTime>02/22/2018 15:01:55</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/AUTHORS.txt">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/external/jquery/jquery.js">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/images/ui-icons_444444_256x240.png">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/images/ui-icons_555555_256x240.png">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/images/ui-icons_777620_256x240.png">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/images/ui-icons_777777_256x240.png">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/index.html">
+      <publishTime>01/17/2018 14:00:29</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/jquery-ui.css">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/jquery-ui.js">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/jquery-ui.min.css">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/jquery-ui.min.js">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/jquery-ui.structure.css">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/jquery-ui.structure.min.css">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/jquery-ui.theme.css">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/jquery-ui.theme.min.css">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/LICENSE.txt">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="jquery-ui-1.12.1/package.json">
+      <publishTime>01/17/2018 14:00:27</publishTime>
+    </File>
+    <File Include="LogWriterConfig.xml">
+      <publishTime>11/30/2017 10:40:38</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/05/2018 11:21:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-daterangepicker/daterangepicker.css">
+      <publishTime>12/07/2017 11:26:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-daterangepicker/daterangepicker.js">
+      <publishTime>12/07/2017 13:52:55</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-daterangepicker/daterangepicker.scss">
+      <publishTime>12/07/2017 11:26:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-daterangepicker/index.html">
+      <publishTime>12/07/2017 11:26:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-daterangepicker/jquery插件库.url">
+      <publishTime>12/07/2017 11:26:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-daterangepicker/moment.js">
+      <publishTime>12/07/2017 11:26:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-daterangepicker/moment.min.js">
+      <publishTime>12/07/2017 11:26:45</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>01/17/2018 13:27:38</publishTime>
+    </File>
+    <File Include="Scripts/index.js">
+      <publishTime>12/06/2017 16:37:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>02/05/2018 11:21:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>02/05/2018 11:21:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>02/05/2018 11:21:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.2.min.js">
+      <publishTime>11/21/2017 22:38:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.js">
+      <publishTime>11/30/2017 09:03:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.min.js">
+      <publishTime>11/30/2017 09:03:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.min.map">
+      <publishTime>11/30/2017 09:03:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.slim.js">
+      <publishTime>11/30/2017 09:03:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.slim.min.js">
+      <publishTime>11/30/2017 09:03:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.slim.min.map">
+      <publishTime>11/30/2017 09:03:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery.js">
+      <publishTime>12/06/2017 16:37:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>01/17/2018 11:28:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>01/17/2018 11:28:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>11/30/2017 09:03:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>11/30/2017 09:03:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>11/29/2017 11:31:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/29/2017 11:31:14</publishTime>
+    </File>
+    <File Include="Scripts/weui.min.js">
+      <publishTime>11/21/2017 22:38:27</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationAutoAnswers/Create.cshtml">
+      <publishTime>01/18/2018 17:04:00</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationAutoAnswers/Delete.cshtml">
+      <publishTime>01/18/2018 16:40:07</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationAutoAnswers/Details.cshtml">
+      <publishTime>01/18/2018 16:39:47</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationAutoAnswers/Edit.cshtml">
+      <publishTime>02/24/2018 14:28:46</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationAutoAnswers/Index.cshtml">
+      <publishTime>02/24/2018 14:22:57</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRecords/Create.cshtml">
+      <publishTime>01/24/2018 15:52:57</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRecords/Delete.cshtml">
+      <publishTime>01/24/2018 15:52:57</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRecords/Details.cshtml">
+      <publishTime>01/31/2018 16:42:17</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRecords/Edit.cshtml">
+      <publishTime>01/24/2018 15:52:57</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRecords/Home.cshtml">
+      <publishTime>01/31/2018 16:44:23</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRecords/Index.cshtml">
+      <publishTime>02/26/2018 13:46:47</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRecords/Report.cshtml">
+      <publishTime>01/24/2018 16:28:57</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRewardPeriods/Create.cshtml">
+      <publishTime>01/18/2018 14:31:23</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRewardPeriods/Delete.cshtml">
+      <publishTime>01/18/2018 14:31:23</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRewardPeriods/Details.cshtml">
+      <publishTime>01/18/2018 14:31:23</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRewardPeriods/Edit.cshtml">
+      <publishTime>01/18/2018 14:31:23</publishTime>
+    </File>
+    <File Include="Views/DLRecommendationRewardPeriods/Index.cshtml">
+      <publishTime>02/24/2018 14:22:57</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/26/2018 16:51:07</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>01/17/2018 11:06:34</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/22/2017 10:27:45</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/29/2019 14:11:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+﻿@model Deepleo.Web.Models.DLRecommendationRewardPeriod
+
+@{
+    ViewBag.Title = "删除奖励期";
+}
+
+<h2>删除奖励期</h2>
+
+<div>
+    
+    <hr />
+    <div class="row-fluid">
+        <div class="alert alert-warning">
+            您确定要删除该条记录？
+        </div>
+        <div class="alert alert-success">
+            开始日期:@Html.DisplayFor(model => model.StartDate)
+        </div>
+        <div class="alert alert-success">
+            结束日期:@Html.DisplayFor(model => model.EndDate)
+        </div>
+        <div class="alert alert-info">
+            简要描述:@Html.DisplayFor(model => model.RewardText)
+        </div>
+    </div>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="确定" class="btn btn-info" />
+
+            <a class="btn btn-info" href='@Url.Action("Index", "DLRecommendationRewardPeriods")'>
+                返回列表
+            </a>
+        </div>
+    }
+</div>
+

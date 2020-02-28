@@ -1,0 +1,34 @@
+﻿@model Deepleo.Web.Models.DLRecommendationRecord
+
+@{
+    ViewBag.Title = "删除";
+}
+
+
+<h3>您确定要删除这条记录？</h3>
+<div>
+    <hr />
+    <div class="row-fluid">
+        <p style="font-size:1.5em;">被推荐人信息</p>
+       
+        <div class="alert alert-success">
+            姓名:@Html.DisplayFor(model => model.ApplicantName)
+        </div>
+        <div class="alert alert-info">
+            身份证号:@Html.DisplayFor(model => model.ApplicantIDCard)
+        </div>
+        <div class="alert alert-success">
+            手机号:@Html.DisplayFor(model => model.ApplicantPhone)
+        </div>
+    </div>
+
+</div>
+<hr />
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        <input type="submit" value="确认删除" class="btn btn-info" />
+        <a class="btn btn-info" href='@Url.Action("Index", "DLRecommendationRecords")'>
+            返回列表
+        </a>
+    }
+

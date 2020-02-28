@@ -1,0 +1,75 @@
+﻿@model Deepleo.Web.Models.DLRecommendationRewardPeriod
+
+@{
+    ViewBag.Title = "新增奖励期";
+}
+
+<h2>新增奖励期</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+  
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group alert alert-warning">
+           工号：@ViewData["EmpNo"]
+
+            <br/>
+           时间：@ViewData["CurrentTime"] 
+        </div>
+        <div class="alert alert-success">
+            <div class="form-group">
+                <div class="col-md-10">
+                    开始日期
+                    @Html.EditorFor(model => model.StartDate, new { htmlAttributes = new { @class = "form-control", @id = "startDate" } })
+                    @Html.ValidationMessageFor(model => model.StartDate, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    结束日期
+                    @Html.EditorFor(model => model.EndDate, new { htmlAttributes = new { @class = "form-control", @id = "endDate" } })
+                    @Html.ValidationMessageFor(model => model.EndDate, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    简要描述
+                    @Html.TextAreaFor(model => model.RewardText, new { htmlAttributes = new { @class = "form-control", @id = "rewardText" } })
+                    @Html.ValidationMessageFor(model => model.RewardText, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="确定" class="btn btn-info" />
+
+                <a class="btn btn-info" href='@Url.Action("Index", "DLRecommendationRewardPeriods")'>
+                    返回列表
+                </a>
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $("#startDate").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $("#startDate").datepicker("setDate", new Date());
+            $("#endDate").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+            $("#endDate").datepicker("setDate", new Date());
+        });
+</script>

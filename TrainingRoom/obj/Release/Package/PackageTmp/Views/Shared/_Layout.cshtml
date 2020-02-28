@@ -1,0 +1,54 @@
+﻿
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>@ViewBag.Title</title>
+    
+    <link rel="stylesheet" href="~/Css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/Css/weui.css"/>
+    <link rel="stylesheet" href="~/jquery-ui-1.12.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="~/Scripts/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/Css/MyStyle.css" />
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript" src="~/Scripts/weui.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="~/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap-daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js" ></script>
+    <style type="text/css">
+        .align-center
+        {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+       .form-horizontal .form-group
+        {
+            margin-right:0px;
+            margin-left:0px;
+        }
+      /*自动换行*/
+       div{ 
+        word-wrap: break-word; 
+        word-break: normal; 
+        }
+       .form-control
+        {
+           -webkit-appearance:none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @RenderSection("featured", required: false)
+        @RenderBody()
+    </div>
+    <!--<div class="footer-wrap" style="text-align: center; margin: 0 ;padding:0;">
+        <img src="~/img/nypro-logo.png" class="weui-footer_fixed-bottom" alt="" style="max-width:100%;overflow:hidden;align-items:center; margin:0 ;padding:0;" />
+    </div>-->
+</body>
+</html>

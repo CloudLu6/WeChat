@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Deepleo.Web.Models.DLRecommendationAutoAnswer>
+
+@{
+    ViewBag.Title = "回复消息";
+}
+
+<table class="table">
+    <thead>
+        <tr class="info">
+            <th>
+                描述
+            </th>
+            <th>
+                回复内容
+            </th>
+        </tr>
+     </thead>
+     <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="warning" onclick="location.href='@Url.Action("Edit", "DLRecommendationAutoAnswers")?id=@item.AutoAnswerId'">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Describe)
+                </td>
+                <td>
+                    @(item.AutoAuswerText != null ? (item.AutoAuswerText.Length > 10 ? item.AutoAuswerText.Substring(0, 10) + "..." : item.AutoAuswerText) : "")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

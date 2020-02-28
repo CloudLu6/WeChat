@@ -1,0 +1,36 @@
+﻿@model Deepleo.Web.Models.DLRecommendationAutoAnswer
+
+@{
+    ViewBag.Title = "回复消息";
+}
+
+<h2>新建回复消息</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.Describe)
+                @Html.TextAreaFor(model => model.AutoAuswerText, new { htmlAttributes = new { @class = "form-control", @id = "rewardText" } })
+                @Html.ValidationMessageFor(model => model.AutoAuswerText, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+                <a class="btn btn-info" href='@Url.Action("Index", "DLRecommendationAutoAnswers")'>
+                    返回列表
+                </a>
+            </div>
+        </div>
+    </div>
+}
+

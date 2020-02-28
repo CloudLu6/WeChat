@@ -1,0 +1,116 @@
+﻿
+@model PagedList.IPagedList<Deepleo.Web.Models.V_DLRecommenderInfo>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "DL报表";
+}
+
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+<link href="~/exportFile/dist/css/tableexport.min.css" rel="stylesheet">
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <br />
+            @using (Html.BeginForm("Report", "DLRecommendationRecords"))
+            {
+                <div style="padding:0px">
+                   <!-- 奖励期？：
+                    <select id="SearchStatus" name="SearchStatus" class="form-control" style="display:inline;width:20%;">
+                        <option value="all">全部</option>
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>-->
+                    日期: @Html.TextBox("SearchDate", ViewBag.CurrentDate as string, new { @class = "form-control", @Style = "display:inline;width:30%;" })
+                    <input class="btn btn-large btn-info" type="submit" value="搜索" style="width:15%;" />
+                  
+                </div>
+            }
+            <br />
+            <div class="table-responsive">
+                <table id="Population-list-1" class="table table-striped table-bordered"
+                       data-name="cool-table">
+                    <thead>
+                        <tr class="info">
+                            <th>推荐人姓名</th>
+                            <th>推荐人工号</th>
+                            <th>推荐人手机</th>
+                            <th>被推荐人姓名</th>
+                            <th>被推荐人手机</th>
+                            <th>被推荐人身份证号</th>
+                            <th>推荐时间</th>
+                            <th>是否重复推荐</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.EmployeeName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.RecommenderNo)</td>
+                                <td>@Html.DisplayFor(modelItem => item.EmployeePhone)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ApplicantName)</td> 
+                                <td>@Html.DisplayFor(modelItem => item.ApplicantPhone)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ApplicantIDCard)</td>
+                                <td>@Html.DisplayFor(modelItem => item.RecordTimeStr)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Repeat)</td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+            @Html.PagedListPager(Model, page => Url.Action("Report", new { page, currentFilter = ViewBag.CurrentFilter }))
+        </div>
+    </div>
+</div>
+
+ 
+<script type="text/javascript">
+      $(document).ready(function() {
+
+            var startDate = '';
+            var endDate = '';
+            if ('@ViewData["startDate"]' == '' || '@ViewData["endDate"]' == '') {
+                startDate = moment().subtract(29, 'days');
+                endDate = moment();
+            }
+            else
+            {
+                startDate = '@ViewData["startDate"]';
+                endDate = '@ViewData["endDate"]';
+
+            }
+            $('#SearchDate').daterangepicker({
+                'autoApply': true
+
+            }, function (start, end, label) {
+                console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+            });
+
+      });
+</script>
+
+<script src="~/exportFile/js/xlsx.core.min.js"></script>
+<script src="~/exportFile/js/blob.js"></script>
+<script src="~/exportFile/js/FileSaver.min.js"></script>
+<script src="~/exportFile/dist/js/tableexport.js"></script>
+<script type="text/javascript">
+    
+    $(function () {
+            $("table").tableExport({ formats: ["xlsx"], fileName: "DLRecommendationList" });
+		})
+</script>
+
+<style type="text/css">
+    .xlsx 
+    {
+        top: 20px;
+        right: 40px;
+        position:absolute;
+        width:20%;
+        background-color:limegreen;
+    }    
+</style>

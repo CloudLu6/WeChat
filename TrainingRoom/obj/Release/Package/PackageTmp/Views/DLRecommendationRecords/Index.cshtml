@@ -1,0 +1,121 @@
+﻿
+@model PagedList.IPagedList<Deepleo.Web.Models.DLRecommendationRecord>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "DL推荐";
+}
+
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <em style="font-size:1.2em;color:green;">@ViewData["RecordPeriod"]</em>
+            <br />
+            @using (Html.BeginForm("Index", "DLRecommendationRecords"))
+            {
+                
+                <div  style="padding:0px">
+                    <a class="btn btn-warning" href='@Url.Action("Create", "DLRecommendationRecords")'>
+                       新增推荐人
+                    </a>
+                    <a id ="admin" class="btn btn-success" href='@Url.Action("Home", "DLRecommendationRecords")'>
+                        后台管理
+                    </a>
+                    <hr />
+                    状态:
+                    <select id="SendState"  onchange="func()" name="SendState" class="form-control" style="display:inline;width:23%;">
+                        <option value="all">全部</option>
+                        <option value="1">已推荐</option>
+                        <option value="0">未推荐</option>
+                    </select>
+                    姓名: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control", @Style = "display:inline;width:25%;" })
+                    <input class="btn btn-large btn-info" type="submit" value="搜索" style="width:23%;" />
+                </div>
+            }
+            <br/>
+            <table class="table">
+                <thead>
+                    <tr class="info">
+                        <th>
+                            姓名
+                        </th>
+                        <th>
+                            身份证号
+                        </th>
+                        <th>
+                            手机
+                        </th>
+      
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        if (item.SendState == 1)
+                        {
+                            <tr class="success" onclick="location.href='@Url.Action("Details", "DLRecommendationRecords")?id=@item.RecordNo'">
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ApplicantName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ApplicantIDCard)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ApplicantPhone)
+                                </td>
+                          
+                            </tr>
+                        }
+                        else
+                        {
+                            <tr class="warning" onclick="location.href='@Url.Action("Details", "DLRecommendationRecords")?id=@item.RecordNo'">
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ApplicantName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ApplicantIDCard)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ApplicantPhone)
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, currentFilter = ViewBag.CurrentFilter }))
+
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    td {
+        font-size: 0.9em;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        if ('@ViewData["SendState"]' == '1') {
+            document.getElementById("SendState")[1].selected = true;
+        }
+        if ('@ViewData["SendState"]' == '0') {
+            document.getElementById("SendState")[2].selected = true;
+        }
+        if ('@ViewData["admin"]' != '1') {
+            $('#admin').hide();
+        }
+    });
+
+    //$("#SendState").val(@ViewData["SendState"]);
+    function func() {
+        //获取被选中的option标签
+        var vs = $('select  option:selected').val();
+        window.location.href = '@Url.Action("Index", "DLRecommendationRecords", new { SendState = "_state"})'.replace("_state", vs);
+    }
+
+</script>

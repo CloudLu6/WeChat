@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Deepleo.Web.Models.DLRecommendationRewardPeriod>
+
+@{
+    ViewBag.Title = "奖励期";
+}
+
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <br/>
+            <a class="btn btn-info" href='@Url.Action("Create", "DLRecommendationRewardPeriods")'>
+                新增奖励期
+            </a>
+            <br />
+            <br />
+            <table class="table">
+                <thead >
+                    <tr class="warning">
+                        <th>
+                            开始日期
+                        </th>
+                        <th>
+                            结日期束
+                        </th>
+                        <th>
+                            描述
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="success" onclick="location.href='@Url.Action("Details", "DLRecommendationRewardPeriods")?id=@item.RewardID'">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.StartDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EndDate)
+                            </td>
+                            <td>
+                               @(item.RewardText!=null?(item.RewardText.Length > 10 ? item.RewardText.Substring(0, 10) + "..." : item.RewardText):"")
+                            </td>
+                            
+                            
+                        </tr>
+                    }
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

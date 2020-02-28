@@ -1,0 +1,119 @@
+﻿
+@model Tuple<Deepleo.Web.Models.DLRecommendationRecord, Deepleo.Web.Models.DLRecommendationAutoAnswer>
+
+@{
+    ViewBag.Title = "被推荐人";
+}
+
+<div>
+    <em id="vaildIDCard" hidden="hidden" style="font-size:1.2em;color:red;"></em>
+    <em style="font-size:1.2em;color:green;">@ViewData["RecordPeriod"]</em>
+    <br />
+    <div class="alert alert-warning">
+        @(Model.Item1.SendState == 1 ? Model.Item2.AutoAuswerText : "您还未推荐此人,是否推荐？")
+        <a id="confirmInfo" class="btn btn-warning">确认推荐</a>
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            提示信息：<br />
+                            @ViewData["VaildIDCard"]
+                        </h4>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" href='@Url.Action("ConfirmRecommend", "DLRecommendationRecords", new { id = Model.Item1.RecordNo })'>
+                            是
+                        </a>
+                        <a class="btn btn-primary" data-dismiss="modal">
+                            否
+                        </a>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+    </div>
+    <hr />
+    <div class="row-fluid">
+        <p style="font-size:1.5em;">被推荐人信息</p>
+
+        <div class="alert alert-success">
+            姓名:@Html.DisplayFor(model => model.Item1.ApplicantName)
+        </div>
+        <div class="alert alert-info">
+            身份证号:@Html.DisplayFor(model => model.Item1.ApplicantIDCard)
+        </div>
+        <div class="alert alert-success">
+            手机号:@Html.DisplayFor(model => model.Item1.ApplicantPhone)
+        </div>
+    </div>
+
+</div>
+<hr />
+
+<a id="modifyInfo" class="btn btn-info" href='@Url.Action("Edit", "DLRecommendationRecords", new { id = Model.Item1.RecordNo })'>
+    修改
+</a>
+<a id="modifyInfo" class="btn btn-info" href='@Url.Action("Delete", "DLRecommendationRecords", new { id = Model.Item1.RecordNo })'>
+    删除
+</a>
+
+<a class="btn btn-info" href='@Url.Action("Index", "DLRecommendationRecords")'>
+    返回列表
+</a>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(function () { $('#myModal').modal('hide') });
+        if ('@Model.Item1.SendState' == '1') {
+            $("#confirmInfo,#modifyInfo").hide();
+        }
+
+      $.ajax({
+            type: 'POST',
+            url: "@Url.Action("vaildIDCard", "DLRecommendationRecords")"+"?applicantIDCard= @Model.Item1.ApplicantIDCard",
+            data:null,
+            success: function (result) {
+                if (result == "0")
+                {
+                    $("#vaildIDCard").show();
+                    document.getElementById('vaildIDCard').innerHTML = "此人已被推荐！";
+                }
+
+            },
+            error: function (result) {
+                alert('PostFail');
+            }
+        });
+
+
+
+
+        $('#confirmInfo').click(function () {
+            $.ajax({
+                type: 'POST',
+                url: "@Url.Action("vaildIDCard", "DLRecommendationRecords")"+"?applicantIDCard= @Model.Item1.ApplicantIDCard",
+                data: null,
+                success: function (result) {
+                    if (result == "1") {
+                        window.location.href = '@Url.Action("ConfirmRecommend", "DLRecommendationRecords", new { id = Model.Item1.RecordNo })';
+                    }
+                    else {
+                        $('#myModal').modal('show');
+                    }
+
+                },
+                error: function (result) {
+                    alert('PostFail');
+                }
+            });
+
+        });
+    });
+
+</script>
+
